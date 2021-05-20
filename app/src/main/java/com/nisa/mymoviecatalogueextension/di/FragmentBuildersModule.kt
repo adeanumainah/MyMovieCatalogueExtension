@@ -1,6 +1,5 @@
 package com.nisa.mymoviecatalogueextension.di
 
-import com.nisa.mymoviecatalogueextension.presentation.detail.MovieDetailFragment
 import com.nisa.mymoviecatalogueextension.presentation.list.MovieListFragment
 import com.nisa.mymoviecatalogueextension.presentation.movies.MoviesFragment
 import com.nisa.mymoviecatalogueextension.presentation.search.SearchFragment

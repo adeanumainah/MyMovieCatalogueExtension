@@ -12,6 +12,8 @@ class App : DaggerApplication() {
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
 
+
+
     override fun androidInjector() = dispatchingAndroidInjector
 
     override fun onCreate() {
@@ -19,8 +21,12 @@ class App : DaggerApplication() {
         if (BuildConfig.DEBUG) setupDebugTools()
     }
 
+//    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+//        return DaggerAppComponent.builder().application(this).build()
+//    }
+
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        return DaggerAppComponent.builder().application(this).build()
+        TODO("Not yet implemented")
     }
 
     private fun setupDebugTools() {

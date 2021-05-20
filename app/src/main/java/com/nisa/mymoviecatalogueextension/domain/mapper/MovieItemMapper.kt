@@ -11,17 +11,33 @@ import javax.inject.Singleton
 @Singleton
 class MovieItemMapper @Inject constructor(private val itemDecider: MovieItemDecider) :
     Mapper<MovieResponse, MovieListViewItem?> {
+
     override fun mapFrom(item: MovieResponse): MovieListViewItem? {
         return MovieListViewItem(
-            page = item.page.orZero(),
-            totalPage = item.totalPages.orZero(),
-            movies = item.results?.map { movie ->
-                MovieViewItem(
-                    id = movie.id.orZero(),
-                    imagePath = itemDecider.provideImagePath(movie.posterPath).orEmpty(),
-                    title = movie.title.orEmpty()
+                page = item.page.orZero(),
+                totalPage = item.totalPages.orZero(),
+                movies = item.results?.map { movie ->
+                    MovieViewItem(
+                        id = movie.id.orZero(),
+                            imagePath = itemDecider.provideImagePath(movie.posterPath).orEmpty(),
+                            title = movie.title.orEmpty()
                 )
-            }.orEmpty()
+                }.orEmpty()
         )
     }
+
+
+//    override fun mapFrom(item: MovieResponse): MovieListViewItem? {
+//        return MovieListViewItem(
+//            page = item.page.orZero(),
+//            totalPage = item.totalPages.orZero(),
+//            movies = item.results?.map { movie ->
+//                MovieViewItem(
+//                    id = movie.id.orZero(),
+//                    imagePath = itemDecider.provideImagePath(movie.posterPath).orEmpty(),
+//                    title = movie.title.orEmpty()
+//                )
+//            }.orEmpty()
+//        )
+//    }
 }

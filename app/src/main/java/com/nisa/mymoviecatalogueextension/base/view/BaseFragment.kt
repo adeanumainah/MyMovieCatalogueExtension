@@ -57,6 +57,8 @@ abstract class BaseFragment<DB : ViewDataBinding, VM : BaseViewModel> : DaggerFr
     }
 
 
+
+
     open fun initStartRequest() {}
     open fun init() {}
     open fun setUpViewModelStateObservers() {}
@@ -80,4 +82,5 @@ abstract class BaseFragment<DB : ViewDataBinding, VM : BaseViewModel> : DaggerFr
             }
         }
     }
+
 }
