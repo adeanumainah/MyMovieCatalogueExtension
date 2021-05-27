@@ -15,3 +15,4 @@ abstract class BaseViewHolder<in T>(itemView: View) : RecyclerView.ViewHolder(it
 
     override val containerView: View = itemView
 }
+

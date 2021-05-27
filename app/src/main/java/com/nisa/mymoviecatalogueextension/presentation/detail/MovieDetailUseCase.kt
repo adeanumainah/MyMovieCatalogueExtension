@@ -14,3 +14,4 @@ class MovieDetailUseCase @Inject constructor(
         return repository.getMovieDetail(movieId = movieId).map { itemMapper.mapFrom(it) }
     }
 }
+

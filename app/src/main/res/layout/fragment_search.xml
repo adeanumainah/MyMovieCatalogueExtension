@@ -41,32 +41,32 @@
             android:background="@color/gray9ba0a6"
             app:layout_constraintTop_toBottomOf="@id/searchView" />
 
-<!--        <com.nisa.mymoviecatalogueextension.view.BaseView-->
-<!--            android:id="@+id/baseView"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            app:imageOfEmptyView="@drawable/ic_search_black_100dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/view"-->
-<!--            app:textOfEmptyView="@string/no_search_result">-->
+        <com.nisa.mymoviecatalogueextension.view.BaseView
+            android:id="@+id/baseView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:imageOfEmptyView="@drawable/ic_search_black_100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:textOfEmptyView="@string/no_search_result">
 
 
-<!--            <androidx.recyclerview.widget.RecyclerView-->
-<!--                android:id="@+id/recyclerView"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:clipToPadding="false"-->
-<!--                android:padding="@dimen/padding_8dp"-->
-<!--                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/view"-->
-<!--                app:spanCount="4"-->
-<!--                tools:itemCount="8"-->
-<!--                tools:listitem="@layout/item_movie_list" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:padding="@dimen/padding_8dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                app:spanCount="4"
+                tools:itemCount="8"
+                tools:listitem="@layout/item_movie_list" />
 
 
-<!--        </com.nisa.mymoviecatalogueextension.view.BaseView>-->
+        </com.nisa.mymoviecatalogueextension.view.BaseView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

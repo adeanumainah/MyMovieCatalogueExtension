@@ -13,7 +13,8 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorHelper">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbarLayout"
@@ -79,7 +80,10 @@
                 android:paddingEnd="@dimen/padding_8dp"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:spanCount="4"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="153dp"
                 tools:listitem="@layout/item_movie_list" />
         </com.nisa.mymoviecatalogueextension.view.BaseView>
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

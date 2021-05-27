@@ -12,3 +12,4 @@ class MovieDetailItemCombiner : (MovieDetailViewItem, MovieListViewItem, List<Ca
         return MovieDetailFragmentViewState(movieDetailViewItem = p1, similarMovies = p2, casts = p3, recommendationMovies = p4)
     }
 }
+

@@ -2,6 +2,7 @@ package com.nisa.mymoviecatalogueextension.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.nisa.mymoviecatalogueextension.presentation.detail.MovieDetailViewModel
 import com.nisa.mymoviecatalogueextension.presentation.list.MovieListViewModel
 import com.nisa.mymoviecatalogueextension.presentation.main.MainViewModel
 import com.nisa.mymoviecatalogueextension.presentation.movies.MoviesViewModel
@@ -43,3 +44,4 @@ abstract class ViewModelModule {
     abstract fun bindsMovieListViewModel(viewModel: MovieListViewModel): ViewModel
 
 }
+

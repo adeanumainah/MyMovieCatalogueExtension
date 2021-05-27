@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewState"
-            type="com.nisa.mymoviecatalogueextension.presentation.detail.MovieDetailFragment" />
+            type="com.nisa.mymoviecatalogueextension.presentation.detail.MovieDetailFragmentViewState" />
     </data>
     <com.nisa.mymoviecatalogueextension.view.BaseView
         android:id="@+id/baseView"

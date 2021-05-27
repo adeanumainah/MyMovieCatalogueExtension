@@ -1,9 +1,10 @@
 package com.nisa.mymoviecatalogueextension.di
 
 import android.app.Application
-import com.facebook.stetho.okhttp3.BuildConfig
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.GsonBuilder
+import com.nisa.mymoviecatalogueextension.BuildConfig
+import com.nisa.mymoviecatalogueextension.BuildConfig.API_URL
 import com.nisa.mymoviecatalogueextension.base.di.ApiInterceptor
 import com.nisa.mymoviecatalogueextension.data.service.RemoteApiService
 import com.nisa.mymoviecatalogueextension.util.DateDeserializer

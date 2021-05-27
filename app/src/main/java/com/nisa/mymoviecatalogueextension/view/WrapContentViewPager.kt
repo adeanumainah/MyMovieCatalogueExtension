@@ -28,3 +28,4 @@ class WrapContentViewPager : ViewPager {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec_)
     }
 }
+

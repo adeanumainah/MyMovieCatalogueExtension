@@ -84,3 +84,4 @@ class MovieDetailFragment : BaseDialogFragment<FragmentMovieDetailBinding, Movie
     }
 
 }
+

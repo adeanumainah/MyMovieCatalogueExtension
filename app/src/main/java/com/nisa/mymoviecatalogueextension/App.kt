@@ -3,6 +3,7 @@ package com.nisa.mymoviecatalogueextension
 //import barissaglam.client.movieapp.di.DaggerAppComponent
 import com.facebook.stetho.BuildConfig
 import com.facebook.stetho.Stetho
+import com.nisa.mymoviecatalogueextension.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import dagger.android.DispatchingAndroidInjector
@@ -12,8 +13,6 @@ class App : DaggerApplication() {
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
 
-
-
     override fun androidInjector() = dispatchingAndroidInjector
 
     override fun onCreate() {
@@ -21,13 +20,10 @@ class App : DaggerApplication() {
         if (BuildConfig.DEBUG) setupDebugTools()
     }
 
-//    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-//        return DaggerAppComponent.builder().application(this).build()
-//    }
-
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        TODO("Not yet implemented")
+        return DaggerAppComponent.builder().application(this).build()
     }
+
 
     private fun setupDebugTools() {
         Stetho.initializeWithDefaults(this)

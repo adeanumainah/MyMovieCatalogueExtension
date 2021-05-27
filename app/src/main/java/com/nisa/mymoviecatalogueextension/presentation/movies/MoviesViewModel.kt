@@ -30,3 +30,4 @@ class MoviesViewModel @Inject constructor(
     }
 
 }
+

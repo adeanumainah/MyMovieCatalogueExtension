@@ -2,6 +2,7 @@ package com.nisa.mymoviecatalogueextension.base.view
 
 import android.app.Dialog
 import android.os.Bundle
+import android.text.format.DateFormat
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
@@ -32,6 +33,11 @@ abstract class BaseActivity<DB : ViewDataBinding, VM : BaseViewModel> : DaggerAp
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+//        val dateFormat = DateFormat.getDateFormat(
+//            applicationContext
+//        )
+
         AndroidInjection.inject(this)
         viewModel = ViewModelProvider(this, viewModelFactory).get(classTypeOfViewModel)
         binding = DataBindingUtil.setContentView(this, layoutResourceId)

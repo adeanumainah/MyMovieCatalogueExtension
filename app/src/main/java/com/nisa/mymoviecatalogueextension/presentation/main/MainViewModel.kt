@@ -6,9 +6,3 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor() : BaseViewModel() {
 
 }
-
-
-
-=========================
-"klo udah cape makanya berhenti"
-"tapi kenapa harus "

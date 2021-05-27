@@ -19,6 +19,5 @@ class MoviesFragmentViewState(
     fun getUpComingMoviesViewPagerTitle() = "Upcoming"
 
 
-
 }
 
