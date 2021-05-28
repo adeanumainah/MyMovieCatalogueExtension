@@ -82,6 +82,8 @@ class MovieDetailFragment : BaseDialogFragment<FragmentMovieDetailBinding, Movie
             binding.linearLayoutCastContent.addView(castItem.root)
         }
     }
+    
+
 
 }
 

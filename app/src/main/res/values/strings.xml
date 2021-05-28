@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyMovieCatalogueExtension</string>
+    <string name="app_name">Movie Extension</string>
     <string name="title_home">Home</string>
 
     <!-- Error -->

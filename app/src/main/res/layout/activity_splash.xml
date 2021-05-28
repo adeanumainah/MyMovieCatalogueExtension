@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@drawable/splash_bg"
+        android:background="@color/primary_red"
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="HardcodedText">
@@ -25,12 +25,13 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/splash_fg"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_logo"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_gravity="center"
             android:src="@drawable/loading"
             android:tint="@color/white"
